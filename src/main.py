@@ -10,7 +10,7 @@ from sklearn.metrics import recall_score
 import sys
 import cleverhans_tutorials.tsc_tutorial_keras_tf as attack
 
-root_dir = '/b/home/uha/hfawaz-datas/dl-tsc/'
+root_dir = '/data/dl-tsc/'
 archive_name = 'UCR_TS_Archive_2015'
 root_dir_archive = root_dir+'archives/'+archive_name+'/'
 root_dir_attack = 'ucr-attack/'
