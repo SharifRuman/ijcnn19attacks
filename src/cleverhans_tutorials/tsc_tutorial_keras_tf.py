@@ -123,7 +123,7 @@ def tsc_tutorial(attack_method='fgsm',batch_size=BATCH_SIZE,
     sess = tf.Session()
     keras.backend.set_session(sess)
 
-    root_dir = '/b/home/uha/hfawaz-datas/dl-tsc/'
+    root_dir = 'data/dl-tsc/'
 
     # dataset_name = 'Adiac'
     archive_name = 'TSC'
