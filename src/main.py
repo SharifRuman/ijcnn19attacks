@@ -53,7 +53,7 @@ def transform_labels(y_train,y_test):
     return new_y_train, new_y_test
 
 def draw(method):
-    dataset_name = 'Coffee'
+    dataset_name = 'HAR'
     classifier_name = 'resnet'
     dir_model = root_dir+'results/' + classifier_name + '/'+archive_name+'/'\
                 + dataset_name + '/best_model.hdf5'
@@ -100,7 +100,7 @@ def draw(method):
     plt.show()
 
 def mds(method):
-    dataset_name = 'Coffee'
+    dataset_name = 'HAR'
     classifier_name = 'resnet'
     dir_model = root_dir+'results/'+classifier_name+'/'+archive_name+'/'+\
                 dataset_name+'/best_model.hdf5'
@@ -193,7 +193,7 @@ def mds(method):
     plt.show()
 
 def noise(method):
-    dataset_name = 'Coffee'
+    dataset_name = 'HAR'
     classifier_name = 'resnet'
     dir_model = root_dir+'results/' + classifier_name + \
                 '/'+archive_name+'/' + dataset_name + '/best_model.hdf5'

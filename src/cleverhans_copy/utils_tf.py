@@ -134,7 +134,7 @@ def train(sess, loss, x, y, X_train, Y_train, save=False,
     if not isinstance(optimizer, tf.train.Optimizer):
       raise ValueError("optimizer object must be from a child class of "
                        "tf.train.Optimizer")
-  # Trigger update operations within the default graph (such as batch_norm).
+  # Trigger update operations within the default graph (such as batch_norm). compat.v1.
   with tf.control_dependencies(tf.get_collection(tf.GraphKeys.UPDATE_OPS)):
     train_step = optimizer.minimize(loss_value, var_list=var_list)
 
